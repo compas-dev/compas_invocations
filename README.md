@@ -1,3 +1,3 @@
-# compas_invokations
+# compas_invocations
 
 A collection of reusable pyinvoke tasks

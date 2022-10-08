@@ -1,6 +1,6 @@
 import pytest
 import compas
-import compas_invokations
+import compas_invocations
 import math
 import numpy
 
@@ -22,8 +22,8 @@ def add_compas(doctest_namespace):
 
 
 @pytest.fixture(autouse=True)
-def add_compas_invokations(doctest_namespace):
-    doctest_namespace["compas_invokations"] = compas_invokations
+def add_compas_invocations(doctest_namespace):
+    doctest_namespace["compas_invocations"] = compas_invocations
 
 
 @pytest.fixture(autouse=True)
