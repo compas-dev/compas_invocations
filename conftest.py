@@ -1,8 +1,9 @@
-import pytest
-import compas
-import compas_invocations
 import math
+
 import numpy
+import pytest
+
+import compas_invocations
 
 
 def pytest_ignore_collect(path):
@@ -14,11 +15,6 @@ def pytest_ignore_collect(path):
 
     if "ghpython" in str(path):
         return True
-
-
-@pytest.fixture(autouse=True)
-def add_compas(doctest_namespace):
-    doctest_namespace["compas"] = compas
 
 
 @pytest.fixture(autouse=True)
