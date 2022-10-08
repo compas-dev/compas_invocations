@@ -18,7 +18,7 @@ ns = Collection(
     docs.linkcheck,
     tests.test,
     tests.testdocs,
-    build.build_ghuser_components,
+    build.prepare_changelog,
     build.clean,
     build.release,
 )
