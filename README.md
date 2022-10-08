@@ -1,6 +1,13 @@
 # compas_invocations
 
+[![pypi](https://img.shields.io/pypi/v/compas_invocations.svg)](https://pypi.org/project/compas-invocations/)
+
 A collection of reusable pyinvoke tasks
+
+.. image:: https://img.shields.io/pypi/v/compas_fab.svg
+    :target: https://pypi.python.org/pypi/compas_fab
+    :alt: PyPI Package latest release
+
 
 ## Usage
 
