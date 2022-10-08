@@ -12,10 +12,13 @@ Text console UI helpers and patterns, e.g. ‘Y/n’ prompts and the like.
     :nosignatures:
 
     confirm
+    chdir
 
 """
-
+import contextlib
+import os
 import sys
+
 
 # NOTE: originally taken from invocations https://github.com/pyinvoke/invocations/blob/main/invocations/console.py
 def confirm(question, assume_yes=True):
@@ -65,3 +68,15 @@ def confirm(question, assume_yes=True):
 
         err = "Focus, kid! It is either (y)es or (n)o"
         print(err, file=sys.stderr)
+
+
+@contextlib.contextmanager
+def chdir(dirname=None):
+    """Context-manager syntax to change to a directory and return to the current one afterwards."""
+    current_dir = os.getcwd()
+    try:
+        if dirname is not None:
+            os.chdir(dirname)
+        yield
+    finally:
+        os.chdir(current_dir)
