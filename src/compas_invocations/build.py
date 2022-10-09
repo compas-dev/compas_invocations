@@ -101,7 +101,7 @@ def prepare_changelog(ctx):
 
 @invoke.task(
     help={
-        "gh_io_folder": "Folder where GH_IO.dll is located. Defaults to the Rhino 6.0 installation folder (platform-specific).",
+        "gh_io_folder": "Folder where GH_IO.dll is located. If not specified, it will try to download from NuGet.",
         "ironpython": "Command for running the IronPython executable. Defaults to `ipy`.",
     }
 )
