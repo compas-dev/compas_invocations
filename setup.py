@@ -25,7 +25,7 @@ optional_requirements = {}
 
 setup(
     name="compas_invocations",
-    version="0.3.0",
+    version="0.3.1",
     description="A collection of reusable pyinvoke tasks",
     long_description=long_description,
     long_description_content_type="text/markdown",
