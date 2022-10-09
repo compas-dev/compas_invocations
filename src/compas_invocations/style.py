@@ -6,6 +6,9 @@ from compas_invocations.console import chdir
 @invoke.task()
 def lint(ctx):
     """Check the consistency of coding style."""
+    print("Running flake8 python linter...")
+    ctx.run("flake8 src tests")
+
     print("Running black python linter...")
     ctx.run("black --check --diff --color src tests")
 
