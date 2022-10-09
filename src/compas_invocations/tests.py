@@ -1,4 +1,5 @@
 import invoke
+
 from compas_invocations.console import chdir
 
 
@@ -17,3 +18,10 @@ def testdocs(ctx):
     """Test the examples in the docstrings."""
     print("Running doctest...")
     ctx.run("pytest --doctest-modules")
+
+
+@invoke.task()
+def testcodeblocks(ctx):
+    """Test the examples in the code blocks of the docs."""
+    print("Running tests on doc code blocks...")
+    ctx.run("pytest docs")

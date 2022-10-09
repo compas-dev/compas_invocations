@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+* Add task to test code blocks in documentation.
+
 ### Changed
 
 ### Removed
@@ -16,18 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.2] 2022-10-08
 
-### Added
-
-### Changed
-
-### Removed
-
-
-## [0.1.1] 2022-10-08
+Initial release
 
 ### Added
 
 ### Changed
 
 ### Removed
-

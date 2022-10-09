@@ -18,6 +18,7 @@ ns = Collection(
     docs.linkcheck,
     tests.test,
     tests.testdocs,
+    tests.testcodeblocks,
     build.prepare_changelog,
     build.clean,
     build.release,
