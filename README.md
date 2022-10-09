@@ -4,11 +4,6 @@
 
 A collection of reusable pyinvoke tasks
 
-.. image:: https://img.shields.io/pypi/v/compas_fab.svg
-    :target: https://pypi.python.org/pypi/compas_fab
-    :alt: PyPI Package latest release
-
-
 ## Usage
 
 Import and add tasks to a collection in your project's `tasks.py` file:
