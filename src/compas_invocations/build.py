@@ -46,6 +46,9 @@ def clean(ctx, docs=True, bytecode=True, builds=True, ghuser=True):
             folders.append("build/")
             folders.extend(glob.glob("src/**/*.egg-info", recursive=False))
 
+        if ghuser and ctx.get("ghuser"):
+            folders.append(os.path.abspath(ctx.ghuser.target_dir))
+
         for folder in folders:
             shutil.rmtree(os.path.join(ctx.base_folder, folder), ignore_errors=True)
 
