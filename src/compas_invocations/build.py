@@ -130,7 +130,7 @@ def build_ghuser_components(ctx, gh_io_folder=None, ironpython=None, prefix=None
                 compas_ghpython.fetch_ghio_lib(gh_io_folder)
 
             if not ironpython:
-                ironpython = "ipy"
+                ironpython = ctx.get("ironpython") or "ipy"
 
             gh_io_folder = os.path.abspath(gh_io_folder)
             componentizer_script = os.path.join(action_dir, "componentize.py")
