@@ -106,11 +106,12 @@ def prepare_changelog(ctx):
     help={
         "gh_io_folder": "Folder where GH_IO.dll is located. If not specified, it will try to download from NuGet.",
         "ironpython": "Command for running the IronPython executable. Defaults to `ipy`.",
+        "prefix": "(Optional) Append this prefix to the names of the built components.",
     }
 )
 def build_ghuser_components(ctx, gh_io_folder=None, ironpython=None, prefix=None):
     """Builds Grasshopper components using GH Componentizer."""
-    prefix = prefix or ctx.ghuser.prefix
+    prefix = prefix or getattr(ctx.ghuser, "prefix", None)
     source_dir = os.path.abspath(ctx.ghuser.source_dir)
     target_dir = os.path.abspath(ctx.ghuser.target_dir)
     repo_url = "https://github.com/compas-dev/compas-actions.ghpython_components.git"
