@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: compas-dev/compas-actions.docs@v1.4.1
+      - uses: compas-dev/compas-actions.docs@v2
         id: docs
         with:
           dest: deploy
@@ -32,11 +32,11 @@ jobs:
           keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+
     outputs:
       commit_type: ${{ steps.docs.outputs.commit_type }}
       current_version: ${{ steps.docs.outputs.current_version }}
-  
+
   docVersions:
     needs: build
     if: needs.build.outputs.commit_type == 'tag'
