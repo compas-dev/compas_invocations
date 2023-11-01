@@ -23,4 +23,10 @@ ns = Collection(
     build.clean,
     build.release,
 )
-ns.configure({"base_folder": os.path.dirname(__file__)})
+ns.configure(
+    {
+        "base_folder": os.path.dirname(__file__),
+        "lint_folders": ["src", "tests"],
+        "format_folders": ["src", "tests"],
+    }
+)

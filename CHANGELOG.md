@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+* Added `lint_folders` and `format_folders` optionals in settings. Defaults to `["src", "tests"]`.
+
 ### Changed
 
 * Fixed `AttributeError` when GH component `prefix` is not specified in settings.
@@ -22,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Use context to locate ironpython install if not provided
+* Use context to locate ironpython install if not provided
 
 ### Removed
 
@@ -33,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Fixed cleanup of GH User components
+* Fixed cleanup of GH User components
 
 ### Removed
 
