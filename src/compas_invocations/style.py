@@ -28,7 +28,6 @@ def check(ctx):
     """Check the consistency of documentation, coding style and a few other things."""
 
     with chdir(ctx.base_folder):
-
         lint(ctx)
 
         print("Checking MANIFEST.in...")
