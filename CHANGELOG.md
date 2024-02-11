@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+* Added support for [componentizer v5](https://github.com/compas-dev/compas-actions.ghpython_components/releases/tag/v5) which supports IronPython and CPython component generation.
+
 ### Changed
 
 ### Removed
